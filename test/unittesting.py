@@ -62,7 +62,7 @@ class MyTestCase(unittest.TestCase):
     def _test_download(self):
         function_name('download')
 
-        pupdater.set_app_dir(path=r'C:\Users\Mahmoud\Desktop\test')
+        pupdater.set_app_dir(path=app_dir)
         pupdater.set_api_client(api_url=api_url)
         download_result = pupdater.download()
 
@@ -71,7 +71,7 @@ class MyTestCase(unittest.TestCase):
     def _test_update(self):
         function_name('update')
 
-        pupdater.set_app_dir(path=r'C:\Users\Mahmoud\Desktop\test')
+        pupdater.set_app_dir(path=app_dir)
         pupdater.set_api_client(api_url=api_url)
         update_result = pupdater.update()
 
